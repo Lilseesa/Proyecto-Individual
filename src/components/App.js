@@ -2,6 +2,9 @@ import React from 'react';
 
 import RepoPage from './RepoPage';
 import Home from './Home';
+import Navbar from './Navbar';
+import About from './About';
+
 import {Link} from 'react-scroll';
 
 const App = () => {
@@ -11,31 +14,7 @@ const App = () => {
 			<div className="contenedor">
 				
 				<header className="header">
-					<nav className="navbar">
-
-						<Link to="Home" smooth={true} duration={1000}>
-							<img className="icon" alt="logo" src={require('../img/LogoSven.png')}></img>
-						</Link>
-
-						<div className="navbar--elements">
-							<Link className="element" to="Home" smooth={true} duration={1000}>
-								Home
-							</Link>
-							<Link className="element" to="RepoPage" smooth={true} duration={1000}>
-								Projects
-							</Link>
-							<Link className="element" to="RepoPage" smooth={true} duration={1000}>
-								Resume
-							</Link>
-							<Link className="element" to="RepoPage" smooth={true} duration={1000}>
-								Contact
-							</Link>
-							<Link className="element" to="RepoPage" smooth={true} duration={1000}>
-								About
-							</Link>
-						</div>
-
-					</nav>
+					<Navbar></Navbar>
 				</header>
 
 				<main>
@@ -56,6 +35,12 @@ const App = () => {
 							<RepoPage></RepoPage>
 						</div>
 					</section>
+
+					<section id="AboutPage">
+						<div className="aboutCont">
+							<About></About>
+						</div>
+					</section>
 				</main>
 			</div>
 		</>
@@ -63,5 +48,3 @@ const App = () => {
 };
 
 export default App;
-
-//token 8c758a06934d0225984a926ace3687fda7713b51

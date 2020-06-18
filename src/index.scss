@@ -7,19 +7,19 @@
 }
 .card{
 	min-height: 210px;
-}
 
-.card-body{
-	text-align: center;
-	font-size: small;
-}
+	&-body{
+		text-align: center;
+		font-size: small;
+	}
 
-.card-title{
-	font-size: 1rem;
-}
+	&-title{
+		font-size: 1rem;
+	}
 
-.card-description{
-	height: 3rem;
+	&-description{
+		height: 3rem;
+	}
 }
 
 :-moz-placeholder {
@@ -34,10 +34,6 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-}
-
-body {
-	font-family: 'Montserrat', sans-serif;
 }
 
 .app {
@@ -64,7 +60,7 @@ body {
 		justify-content: flex-start;
 
 		&--elements{
-			margin-left: 70%;
+			margin-left: 75%;
 		}
 		a {
 			color: #fff;
@@ -80,6 +76,7 @@ body {
 
 .element:hover, .icon:hover{
 	cursor: pointer;
+	color: #23292d;
 }
 
 main {
@@ -156,9 +153,45 @@ main {
 	min-height: 100vh;
 }
 
+.repoContainer{
+	padding: 2.5rem;
+	display: block;
+	min-height: 100vh;
+}
+
+.aboutCont{
+	padding: 4rem;
+	display: block;
+	min-height: 100vh;
+	margin-left: 8rem;
+}
+
+.aboutContainer{
+	color: #fff;
+}
+
 .contenedor{
 	//background-image: url('../src/img/fondo.jpg');
 	background-color: #23292d;
+}
+
+.textContainer{
+	width: 30vw;
+}
+
+.textBoxes{
+	display: flex;
+}
+
+.personalInfo{
+	width: 8rem;
+	margin: 3rem 10rem 0 0;
+}
+
+.redes{
+	color: #fff;
+	text-decoration: underline;
+	margin-right: 4rem;
 }
 
 .btn{
@@ -190,6 +223,12 @@ main {
 
 .nav-item{
 	color: #fff;
+}
+
+.subtitle{
+	font-family: 'Oswald', sans-serif;
+	//font-size: x-large;
+	font-weight: bold;
 }
 
 .title, .btn{

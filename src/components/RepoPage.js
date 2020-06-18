@@ -9,7 +9,7 @@ const RepoPage = ({ RepoPage }) => {
 
 	const getRepos = () => {
 		axios
-			.get('/user/repos?sort=updated_at')
+			.get('/user/repos?sort=updated_at&affiliation=owner')
 			.then((res) => {
 				console.log(res.data);
 
@@ -29,7 +29,7 @@ const RepoPage = ({ RepoPage }) => {
 		<div className="app">
 			<div>
 				<main className="container">
-					<a className="list__item__link list__item__link--active" href="/"> Repositories</a>
+					<p className="list__item__link list__item__link--active"> Repositories</p>
 					{repos && <ReposList repos={repos}></ReposList>}
 				</main>
 			</div>
