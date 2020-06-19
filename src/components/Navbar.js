@@ -13,16 +13,13 @@ const Navbar = () => {
 
             <div className="navbar--elements">
                 <Link className="element" to="Home" smooth={true} duration={1000}>
-                    Home
+                    Inicio
                 </Link>
                 <Link className="element" to="RepoPage" smooth={true} duration={1000}>
-                    Projects
-                </Link>
-                <Link className="element" to="RepoPage" smooth={true} duration={1000}>
-                    Hobbies
+                    Proyectos
                 </Link>
                 <Link className="element" to="AboutPage" smooth={true} duration={1000}>
-                    About me
+                    Acerca de mi
                 </Link>
             </div>
 
