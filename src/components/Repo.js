@@ -11,7 +11,7 @@ const Repo = ({ repo, repoInfo }) => (
                 </h3>
                 <p className="card-description">{repo.description}</p>
                 <p className="list__item__description card-text">{repo.language}</p>
-                <a type="button" className="btn btn-repo" href={repo.svn_url} target="_blank">Ver página</a>
+                <a type="button" className="btn btn-repo" href={repo.svn_url} target="_blank" rel="noopener noreferrer">Ver página</a>
             </div>
         </div>
     </div>
