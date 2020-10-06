@@ -1,5 +1,4 @@
 import React from 'react';
-import Pagination from '@material-ui/lab/Pagination';
 
 const About = () =>(
     <div className="aboutContainer">
